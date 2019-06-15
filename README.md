@@ -1,2 +1,2 @@
 # integration
-Simple algorithm to compute numerical integrals
+Simple algorithms to compute numerical integrals
