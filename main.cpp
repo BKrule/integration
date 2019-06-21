@@ -37,8 +37,6 @@ int main() {
 	if (outS.is_open()) {
 		for (double c=0; c<10; c+=0.01) {
 			outS<<c<<"\t"<<integrate_simps(S, 0, c)<<endl;
-		
-			
 		}
 	}
 	else {
@@ -48,8 +46,6 @@ int main() {
 	if (outC.is_open()) {
 		for (double c=0; c<10; c+=0.01) {
 			outC<<c<<"\t"<<integrate_simps(C, 0, c)<<endl;
-
-
 		}
 	}
 	else {
