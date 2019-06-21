@@ -80,7 +80,6 @@ double integrate_trapz(double(*f)(double, double), double a, double b, double p)
 		}
 
 		I=0.5*I+h*s; // Computing the integral
-		
 	} while (fabs(oldI-I)>eps);// Checking precision
 	if (I<1E-10) {
 		return 0;
@@ -128,8 +127,6 @@ double integrate_simps(double(*f)(double), double a, double b) {
 
 		I=I*0.5+h*s;
 		S=4./3.*I-1./3.*oldI;// Computing the integral
-
-
 	} while (fabs(oldS-S)>eps); // Checking precision
 	if (S<1E-10) {
 		return 0;
@@ -173,7 +170,6 @@ double integrate_simps(double(*f)(double, double), double a, double b, double p)
 
 		I=I*0.5+h*s;
 		S=4./3.*I-1./3.*oldI;
-
 	} while (fabs(oldS-S)>eps);
 	if (S<1E-10) {
 		return 0;
